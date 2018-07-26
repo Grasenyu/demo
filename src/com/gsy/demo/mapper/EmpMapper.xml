@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gsy.demo.mapper.EmpMapper">
+
+	<select id = "allemp" resultType="employee">
+		select * from Employee
+	</select>
+
+	<insert id="add" parameterType="workhistory">
+		insert into workhistory values('${}')
+	</insert>
+
+
+</mapper>
